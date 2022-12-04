@@ -9,8 +9,8 @@ const lon = position.coords.longitude;
 fetch(url)
 .then(response => response.json())
 .then(data =>{
-    const weatherContainer = document.querySelector("#weather span:first-child");
-    const cityContainer = document.querySelector("#weather span:last-child");
+    const weatherContainer = document.querySelector("#weather #weather1");
+    const cityContainer = document.querySelector("#weather #weather2");
     const name = data.name;
     const weather = data.weather[0].mian;
     cityContainer.innerText = data.name;

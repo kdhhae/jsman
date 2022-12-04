@@ -27,6 +27,7 @@ const span = document.createElement("span");
 span.innerHTML = newTodo.text;
 const button = document.createElement("button");
 button.innerText = "❌";
+button.classList.add("button")
 li.appendChild(span);
 li.appendChild(button);
 button.addEventListener("click",deleteToDo)
